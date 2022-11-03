@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Makela Gedeon">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <nav class="py-2 bg-green border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.46 6.666A2.4 2.4 0 0 1 4.8 4.8h14.4a2.4 2.4 0 0 1 2.34 1.866L12 12.496l-9.54-5.83Zm-.06 1.37v8.525l6.964-4.27L2.4 8.037Zm8.114 4.96L2.63 17.828A2.401 2.401 0 0 0 4.8 19.2h14.4a2.4 2.4 0 0 0 2.17-1.373l-7.884-4.832-1.486.908-1.486-.908Zm4.123-.703L21.6 16.56V8.036l-6.963 4.255v.002Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.08 12.539c0-5.335-4.298-9.66-9.6-9.66-5.304.001-9.602 4.325-9.602 9.661 0 4.82 3.511 8.817 8.1 9.541v-6.75H8.542v-2.79h2.438v-2.13c0-2.421 1.434-3.758 3.627-3.758 1.05 0 2.149.188 2.149.188v2.376h-1.21c-1.192 0-1.564.745-1.564 1.51v1.812h2.661l-.425 2.791H13.98v6.75c4.59-.725 8.1-4.72 8.1-9.541Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3.433C2 2.64 2.658 2 3.469 2H20.53c.813 0 1.47.641 1.47 1.433v17.134C22 21.36 21.343 22 20.531 22H3.47C2.658 22 2 21.359 2 20.567V3.433Zm6.179 15.31V9.71H5.177v9.031H8.18Zm-1.5-10.265c1.046 0 1.697-.693 1.697-1.56-.018-.887-.65-1.56-1.677-1.56C5.67 5.357 5 6.032 5 6.918c0 .867.651 1.56 1.659 1.56h.02Zm6.135 10.264V13.7c0-.27.02-.54.1-.733.216-.538.71-1.097 1.54-1.097 1.086 0 1.52.827 1.52 2.042v4.832h3.001v-5.18c0-2.776-1.48-4.066-3.455-4.066-1.592 0-2.306.876-2.706 1.492v.031h-.02l.02-.031V9.71h-3c.037.848 0 9.031 0 9.031h3Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.062 5.28h.106c.987.003 5.985.039 7.332.401a2.411 2.411 0 0 1 1.698 1.704c.122.456.207 1.06.264 1.683l.012.125.027.312.01.124a38.66 38.66 0 0 1 .088 2.349v.09a38.42 38.42 0 0 1-.098 2.472l-.01.126-.01.124c-.06.687-.15 1.369-.283 1.87a2.407 2.407 0 0 1-1.698 1.704c-1.392.374-6.682.4-7.416.402h-.17c-.37 0-1.904-.007-3.512-.062l-.204-.008-.105-.004-.205-.009-.205-.008c-1.332-.059-2.6-.154-3.185-.312A2.408 2.408 0 0 1 2.8 16.66c-.133-.5-.222-1.183-.282-1.87l-.01-.125-.01-.125a37.683 37.683 0 0 1-.098-2.443v-.148c.003-.258.012-1.15.077-2.134l.009-.123.003-.063.01-.124.026-.313.012-.124c.058-.623.143-1.228.264-1.683A2.408 2.408 0 0 1 4.5 5.681c.585-.156 1.853-.252 3.185-.312l.204-.008.206-.007.104-.004.205-.008c1.142-.037 2.284-.057 3.427-.061h.232v-.002ZM10.08 9.13v5.782l4.989-2.89L10.08 9.13Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="p-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <img class="bi me-2" src="assets/img/logo.png" width="150" />
+                </a>
+
+                <ul
+                    class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 fw-bolder text-uppercase">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Présentation</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Texte Réglementaires</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Procédure et démarches</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Publications</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Statisque</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control border-rounded" placeholder="Recherher..."
+                        aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- <nav class="py-2 bg-green border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2 active"
+                        aria-current="page">Accueil</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2">Présentation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2">Texte Réglementaires</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2">Procédure et démarches</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2">Publications</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-green-inverse px-2">Statisque</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.46 6.666A2.4 2.4 0 0 1 4.8 4.8h14.4a2.4 2.4 0 0 1 2.34 1.866L12 12.496l-9.54-5.83Zm-.06 1.37v8.525l6.964-4.27L2.4 8.037Zm8.114 4.96L2.63 17.828A2.401 2.401 0 0 0 4.8 19.2h14.4a2.4 2.4 0 0 0 2.17-1.373l-7.884-4.832-1.486.908-1.486-.908Zm4.123-.703L21.6 16.56V8.036l-6.963 4.255v.002Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.08 12.539c0-5.335-4.298-9.66-9.6-9.66-5.304.001-9.602 4.325-9.602 9.661 0 4.82 3.511 8.817 8.1 9.541v-6.75H8.542v-2.79h2.438v-2.13c0-2.421 1.434-3.758 3.627-3.758 1.05 0 2.149.188 2.149.188v2.376h-1.21c-1.192 0-1.564.745-1.564 1.51v1.812h2.661l-.425 2.791H13.98v6.75c4.59-.725 8.1-4.72 8.1-9.541Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3.433C2 2.64 2.658 2 3.469 2H20.53c.813 0 1.47.641 1.47 1.433v17.134C22 21.36 21.343 22 20.531 22H3.47C2.658 22 2 21.359 2 20.567V3.433Zm6.179 15.31V9.71H5.177v9.031H8.18Zm-1.5-10.265c1.046 0 1.697-.693 1.697-1.56-.018-.887-.65-1.56-1.677-1.56C5.67 5.357 5 6.032 5 6.918c0 .867.651 1.56 1.659 1.56h.02Zm6.135 10.264V13.7c0-.27.02-.54.1-.733.216-.538.71-1.097 1.54-1.097 1.086 0 1.52.827 1.52 2.042v4.832h3.001v-5.18c0-2.776-1.48-4.066-3.455-4.066-1.592 0-2.306.876-2.706 1.492v.031h-.02l.02-.031V9.71h-3c.037.848 0 9.031 0 9.031h3Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-green-inverse px-2">
+                        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.062 5.28h.106c.987.003 5.985.039 7.332.401a2.411 2.411 0 0 1 1.698 1.704c.122.456.207 1.06.264 1.683l.012.125.027.312.01.124a38.66 38.66 0 0 1 .088 2.349v.09a38.42 38.42 0 0 1-.098 2.472l-.01.126-.01.124c-.06.687-.15 1.369-.283 1.87a2.407 2.407 0 0 1-1.698 1.704c-1.392.374-6.682.4-7.416.402h-.17c-.37 0-1.904-.007-3.512-.062l-.204-.008-.105-.004-.205-.009-.205-.008c-1.332-.059-2.6-.154-3.185-.312A2.408 2.408 0 0 1 2.8 16.66c-.133-.5-.222-1.183-.282-1.87l-.01-.125-.01-.125a37.683 37.683 0 0 1-.098-2.443v-.148c.003-.258.012-1.15.077-2.134l.009-.123.003-.063.01-.124.026-.313.012-.124c.058-.623.143-1.228.264-1.683A2.408 2.408 0 0 1 4.5 5.681c.585-.156 1.853-.252 3.185-.312l.204-.008.206-.007.104-.004.205-.008c1.142-.037 2.284-.057 3.427-.061h.232v-.002ZM10.08 9.13v5.782l4.989-2.89L10.08 9.13Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!-- ./header -->
+
+    <!--Carousel-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" src="assets/img/sliders/slide-1.jpg" width="100%" height="100%" />
+                <div class="container">
+                    <div class="carousel-caption text-start img-carousel-op p-5 border-rounded text-green-inverse">
+                        <h2>REUNION DE PRISE DE CONTACT ENTRE LA DGIFN ET UNOC</h2>
+                        <p>
+                            le Directeur Général des Institutions Financières Nationales et le Président de l'Union
+                            Nationale des opérateurs économiques du Congo, jettent les ponts d'une franche
+                            collaboration. Une réunion de prise de
+                            contact a été effectuée entre les deux institutions le jeudi 20 octobre 2022, le Directeur
+                            Général des Institutions
+                            Financières Nationales, Monsieur Jean Pierre NONAULT a été reçu par le Président de l’Union
+                            Nationale des Opérateurs
+                            Economiques du Congo,Monsieur Jean Daniel OVAGA pour réunion de prise de contact.
+                        </p>
+                        <p>
+                            <a class="btn btn btn-light" href="#">
+                                Lire la suite
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.25 12a8.75 8.75 0 1 0 17.5 0 8.75 8.75 0 0 0-17.5 0ZM22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-14.375-.625a.625.625 0 1 0 0 1.25h7.241l-2.684 2.682a.627.627 0 0 0 .886.885l3.75-3.75a.625.625 0 0 0 0-.885l-3.75-3.75a.626.626 0 1 0-.886.886l2.684 2.682H7.625Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="assets/img/sliders/slide-2.jpg" width="100%" height="100%" />
+                <div class="container">
+                    <div class="carousel-caption img-carousel-op border-rounded p-5">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p>
+                            <a class="btn btn-light" href="#">
+                                Lire la suite
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.25 12a8.75 8.75 0 1 0 17.5 0 8.75 8.75 0 0 0-17.5 0ZM22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-14.375-.625a.625.625 0 1 0 0 1.25h7.241l-2.684 2.682a.627.627 0 0 0 .886.885l3.75-3.75a.625.625 0 0 0 0-.885l-3.75-3.75a.626.626 0 1 0-.886.886l2.684 2.682H7.625Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="assets/img/sliders/slide-3.jpg" width="100%" height="100%" />
+                <div class="container">
+                    <div class="carousel-caption img-carousel-op border-rounded p-5 text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p>
+                            <a class="btn btn-light" href="#">
+                                Lire la suite
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.25 12a8.75 8.75 0 1 0 17.5 0 8.75 8.75 0 0 0-17.5 0ZM22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-14.375-.625a.625.625 0 1 0 0 1.25h7.241l-2.684 2.682a.627.627 0 0 0 .886.885l3.75-3.75a.625.625 0 0 0 0-.885l-3.75-3.75a.626.626 0 1 0-.886.886l2.684 2.682H7.625Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--./Carousel-->
+    <!--content-->
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 style="font-weight: 700;" class="text-green">ACCÈS CIBLES</h4>
+                <div class="mt-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    Conditions d'obtention d'un agrément de transfert de fonds.
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Avoir une vue sur les séries statistiques.
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                    imagine this being
+                                    filled with some actual content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Liste des établissements financiers.
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the third item's accordion body.
+                                    Nothing more exciting
+                                    happening here in terms of content, but just filling up the space to make it look,
+                                    at least at first
+                                    glance, a bit more representative of how this would look in a real-world
+                                    application.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4 style="font-weight: 700;" class="text-green">NOTRE MISSION</h4>
+
+                <div class="mt-4">
+                    <ul class="list-group fs-5 fw-semibold">
+                        <li class="list-group-item border-0">
+                            <svg width="34" height="34" fill="currentColor"
+                                class="rounded-circle bg-green text-light p-1 me-2 flex-shrink-0" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.88 14.76a.6.6 0 0 1 .6-.6h2.4a.6.6 0 0 1 .6.6v2.4a.6.6 0 0 1-.6.6h-2.4a.6.6 0 0 1-.6-.6v-2.4Zm4.8-3.6a.6.6 0 0 1 .6-.6h2.4a.6.6 0 0 1 .6.6v6a.6.6 0 0 1-.6.6h-2.4a.6.6 0 0 1-.6-.6v-6Zm4.8-3.6a.6.6 0 0 1 .6-.6h2.4a.6.6 0 0 1 .6.6v9.6a.6.6 0 0 1-.6.6h-2.4a.6.6 0 0 1-.6-.6v-9.6Zm4.8 9.6a.6.6 0 0 1 .6-.6h2.4a.6.6 0 1 1 0 1.2h-2.4a.6.6 0 0 1-.6-.6Z">
+                                </path>
+                            </svg>
+                            Cadre d'intervention
+                        </li>
+                        <li class="list-group-item border-0">
+                            <svg width="34" height="34" fill="currentColor"
+                                class="rounded-circle bg-green text-light p-1 me-2 flex-shrink-0" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.32 3.12a1.8 1.8 0 0 0-1.8 1.8v.6h4.8v-.6a1.8 1.8 0 0 0-1.8-1.8h-1.2Zm3 3.6v1.2h2.4v-1.2h4.8v1.06a.6.6 0 0 0 .331.536l1.074.536a1.8 1.8 0 0 1 .995 1.61v7.06h-7.2v-1.8a.602.602 0 0 1 .175-.426l1.025-1.023v-.952a.6.6 0 0 0-.6-.6h-3.6a.6.6 0 0 0-.6.6v.952l1.025 1.023a.599.599 0 0 1 .175.425v1.8h-7.2v-7.058a1.8 1.8 0 0 1 .996-1.61l1.073-.537a.6.6 0 0 0 .331-.536V6.72h4.8Zm-7.2 12v.6a1.8 1.8 0 0 0 1.8 1.8h3.6a1.8 1.8 0 0 0 1.8-1.8v-.6h-7.2Zm9.6 0v.6a1.8 1.8 0 0 0 1.8 1.8h3.6a1.8 1.8 0 0 0 1.8-1.8v-.6h-7.2Zm4.8-13.2h-4.8v-.6a1.8 1.8 0 0 1 1.8-1.8h1.2a1.8 1.8 0 0 1 1.8 1.8v.6Z">
+                                </path>
+                            </svg>
+                            Veille Réglementaire
+                        </li>
+                        <li class="list-group-item border-0">
+                            <svg width="34" height="34" fill="currentColor"
+                                class="rounded-circle bg-green text-light p-1 me-2 flex-shrink-0" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.4 18.6a.6.6 0 0 0 .6.6h1.2a.6.6 0 0 0 .6-.6v-7.2a.6.6 0 0 0-.6-.6H15a.599.599 0 0 0-.6.6v7.2Zm-3 .6a.6.6 0 0 1-.6-.6v-4.8a.6.6 0 0 1 .6-.6h1.2a.599.599 0 0 1 .6.6v4.8a.6.6 0 0 1-.6.6h-1.2Zm-3.6 0a.6.6 0 0 1-.6-.6v-2.4a.6.6 0 0 1 .6-.6H9a.6.6 0 0 1 .6.6v2.4a.6.6 0 0 1-.6.6H7.8Z">
+                                </path>
+                                <path
+                                    d="M19.2 19.2V7.8l-5.4-5.4H7.2a2.4 2.4 0 0 0-2.4 2.4v14.4a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4ZM13.8 6a1.8 1.8 0 0 0 1.8 1.8H18v11.4a1.2 1.2 0 0 1-1.2 1.2H7.2A1.2 1.2 0 0 1 6 19.2V4.8a1.2 1.2 0 0 1 1.2-1.2h6.6V6Z">
+                                </path>
+                            </svg>
+                            Rapports
+                        </li>
+                        <li class="list-group-item border-0">
+                            <svg width="34" height="34" fill="currentColor"
+                                class="rounded-circle bg-green text-light p-1 me-2 flex-shrink-0" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.2 3.96a1.8 1.8 0 0 0-1.8 1.8v.6H4.2a1.8 1.8 0 0 0-1.8 1.8v1.66l9.137 2.437c.304.08.623.08.927 0L21.6 9.82V8.16a1.8 1.8 0 0 0-1.8-1.8h-4.2v-.6a1.8 1.8 0 0 0-1.8-1.8h-3.6Zm0 1.2h3.6a.6.6 0 0 1 .6.6v.6H9.6v-.6a.6.6 0 0 1 .6-.6Z">
+                                </path>
+                                <path
+                                    d="M2.4 17.76a1.8 1.8 0 0 0 1.8 1.8h15.6a1.8 1.8 0 0 0 1.8-1.8v-6.78l-9.445 2.517a.598.598 0 0 1-.31 0L2.4 10.98v6.78Z">
+                                </path>
+                            </svg>
+                            Espace Professionnel
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./content-->
+
+    <!-- Director-->
+    <div class="container-fluid bg-green">
+        <div class="p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 ms-2">
+                        <div class="mt-4 ms-4">
+                            <img src="assets/img/image001.jpg" class="img-fluid img-thumbnail" width="250" alt=""
+                                srcset="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-4 text-green-inverse">
+                            <h3 class="fw-bolder mb-3">Mot du Directeur Général</h3>
+                            <p class="fw-semibold justify-content-start">
+                                Merci de nous faire confiance et de porter attention à nos activités, la direction
+                                générale
+                                des
+                                institutions financières
+                                nationales est l’organe par excellence du gouvernement en matière de finances publiques,
+                                plus
+                                précisément dans les
+                                secteurs des banques, assurances, microfinances de la gestion de la monnaie électronique
+                                et
+                                des
+                                transferts de fonds.
+                                Nos responsabilités sont certes lourdes, mais avec une bonne dose d’abnégation et
+                                surtout de
+                                rigueur nous allons
+                                parvenir à apporter une valeur ajoutée dans nos différents secteurs d’activité.
+                                Ainsi, jour après jour, une amélioration qualitative sera ressentie par nos populations
+                                c’est
+                                alors nous aurons le
+                                sentiment d’avancer vers l’excellence souhaitée.
+                                Nous vous remercions par avance de cette visite et surtout du temps que vous aurez à
+                                nous
+                                écrire
+                                pour vos remarques,
+                                avis et suggestions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./Director-->
+
+    <!--photothèque-->
+    <div class="container mt-4">
+        <div class="row">
+            <h3 class="fw-bolder mb-3 text-green">PHOTOTHÈQUE</h3>
+            <div class="col-md-4 mt-3 col-lg-4">
+                <img src="assets/img/phototheque/picture-1.jpg" class="img-fluid" alt="image">
+            </div>
+            <div class="col-md-4 mt-3 col-lg-4">
+                <img src="assets/img/phototheque/picture-2.jpg" class="img-fluid" alt="image">
+            </div>
+            <div class="col-md-4 mt-3 col-lg-4">
+                <img src="assets/img/phototheque/picture-3.jpg" class="img-fluid" alt="image">
+            </div>
+            <div class="col-md-4 mt-3 col-lg-6">
+                <img src="assets/img/phototheque/picture-4.jpg" class="img-fluid" alt="image">
+            </div>
+            <div class="col-md-4 mt-3 col-lg-6">
+                <img src="assets/img/phototheque/picture-5.jpg" class="img-fluid" alt="image">
+            </div>
+        </div>
+    </div>
+    <!--./photothèque-->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
