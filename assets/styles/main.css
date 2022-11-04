@@ -12,6 +12,11 @@ body {
     background-color: #D31933 !important;
 }
 
+.bg-grey {
+    --bs-bg-opacity: 1;
+    background-color: #E4E4E4 !important;
+}
+
 .bg-green-inverse {
     --bs-bg-opacity: 1;
     background-color: #afeac9 !important;
@@ -80,4 +85,52 @@ body {
 .img-carousel-op {
     background-color: rgba(0, 96, 43, .7);
     color: #D7D7D7;
+}
+
+/* card */
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    background-color: #fff
+}
+
+.image-card {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.image-card-1 {
+    background-color: #C6E6D4
+}
+
+.image-card-2 {
+    background-color: #F3D748
+}
+
+.image-card-3 {
+    background-color: #E16577
+}
+
+.image-card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover
+}
+
+.card-text {
+    font-size: 13px
+}
+
+.card-body a {
+    font-size: 12px
+}
+
+.about span {
+    font-size: 12px
 }

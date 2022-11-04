@@ -9,9 +9,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- <link rel="stylesheet" href="assets/styles/loader.css"> -->
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
+    <!-- loader -->
+    <div id="loader" class="loader">
+        <i class="grey"></i>
+    </div>
+    <!-- ./loader -->
 
     <!-- header -->
     <nav class="py-2 bg-green border-bottom">
@@ -86,10 +93,10 @@
                     <li><a href="#" class="nav-link px-2 link-dark">Statisque</a></li>
                 </ul>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                     <input type="search" class="form-control border-rounded" placeholder="Recherher..."
                         aria-label="Search">
-                </form>
+                </form> -->
             </div>
         </div>
     </header>
@@ -205,8 +212,13 @@
                 <img class="bd-placeholder-img" src="assets/img/sliders/slide-2.jpg" width="100%" height="100%" />
                 <div class="container">
                     <div class="carousel-caption img-carousel-op border-rounded p-5">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <h2 class="text-uppercase">Remise de l arrêté d agrément</h2>
+                        <p class="justify-content-center">
+                            le Directeur Général des institutions financières nationales a reçu ce mercredi 02 novembre
+                            2022, dans les locaux de la
+                            DGIFN, Monsieur YONTA Rostant dans le cadre de sa remise d arrêté d agrément en qualité de
+                            directeur général de l
+                            établissement de microfinance de deuxième catégorie EXPRESS UNION CONGO SA.</p>
                         <p>
                             <a class="btn btn-light" href="#">
                                 Lire la suite
@@ -411,10 +423,7 @@
                                 alors nous aurons le
                                 sentiment d’avancer vers l’excellence souhaitée.
                                 Nous vous remercions par avance de cette visite et surtout du temps que vous aurez à
-                                nous
-                                écrire
-                                pour vos remarques,
-                                avis et suggestions.
+                                nous écrire pour vos remarques, avis et suggestions.
                             </p>
                         </div>
                     </div>
@@ -434,6 +443,9 @@
             <div class="col-md-4 mt-3 col-lg-4">
                 <img src="assets/img/phototheque/picture-2.jpg" class="img-fluid" alt="image">
             </div>
+            <!-- <div class="col-md-4 mt-3 col-lg-4">
+                <img src="assets/img/phototheque/picture-7.jpg" class="img-fluid" alt="image">
+            </div> -->
             <div class="col-md-4 mt-3 col-lg-4">
                 <img src="assets/img/phototheque/picture-3.jpg" class="img-fluid" alt="image">
             </div>
@@ -446,6 +458,156 @@
         </div>
     </div>
     <!--./photothèque-->
+
+    <!-- Publique -->
+    <div class="container-fluid mt-4 bg-grey">
+        <div class="container">
+            <div class="row">
+                <h3 class="fw-bolder mt-5 text-green text-uppercase">Publication</h3>
+                <div class="row g-3 mb-5">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="assets/img/phototheque/picture-5.jpg" width="420" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <span class="text-uppercase text-green fw-bold fs-6">Category</span>
+                                <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua..
+                                </p>
+                                <a href="#" class="text-dark">lire plus..</a>
+                                <div class="mt-4 about d-flex justify-content-between align-items-center">
+                                    <span>By Prabhjot Singh</span>
+                                    <span>On 12 Oct, 2020</span>
+                                    <span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="assets/img/phototheque/picture-2.jpg" width="420" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <span class="text-uppercase text-green fw-bold fs-6">Category</span>
+                                <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua..
+                                </p>
+                                <a href="#" class="text-dark"><a href="#" class="text-dark">lire plus..</a>
+                                    <div class="mt-4 about d-flex justify-content-between align-items-center">
+                                        <span>By Prabhjot Singh</span>
+                                        <span>On 12 Oct, 2020</span>
+                                        <span>5 min read</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="assets/img/phototheque/picture-3.jpg" width="420" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <span class="text-uppercase text-green fw-bold fs-6">Category</span>
+                                <h6 class="card-title text-black mt-2">What you wants to know about hubspot?</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua..</p>
+                                <a href="#" class="text-dark">Lire plus...</a>
+                                <div class="mt-4 about d-flex justify-content-between align-items-center">
+                                    <span>By Prabhjot Singh</span>
+                                    <span>On 12 Oct, 2020</span>
+                                    <span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./Publique -->
+
+    <!-- footer -->
+    <div class="container-fluid bg-green text-green-inverse">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-green-inverse">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-light" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--./footer -->
 
     <script src="assets/js/main.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.js"></script>
