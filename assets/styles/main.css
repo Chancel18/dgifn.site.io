@@ -2,6 +2,10 @@ body {
     background-color: #fff;
 }
 
+.dropdown-menu {
+    border-radius: 0%;
+}
+
 .bg-green {
     --bs-bg-opacity: 1;
     background-color: #009041 !important;
