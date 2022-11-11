@@ -30,6 +30,11 @@ body {
     color: #C6E6D4 !important;
 }
 
+.border-green-inverse {
+    --bs-border-opacity: 1;
+    border-color: #afeac9 !important;
+}
+
 .text-green-inverse {
     color: #C6E6D4 !important;
 }
